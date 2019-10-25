@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:hint="Age"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAge"
+        android:layout_marginTop="10dp"
+        android:hint="Job"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextJob"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:text="Save Data"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnShowData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSave"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:text="Show Data"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/showName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnShowData"
+        android:layout_marginTop="20dp"
+        android:textSize="19sp"
+        tools:text="Name = Ari"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/showAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showName"
+        android:layout_marginTop="20dp"
+        android:textSize="19sp"
+        tools:text="Age = 19"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/showJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showAge"
+        android:layout_marginTop="20dp"
+        android:textSize="19sp"
+        tools:text="Job = Android Programmer"/>
+
+</RelativeLayout>
